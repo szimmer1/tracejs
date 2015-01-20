@@ -10,17 +10,17 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" />
 
-
+    <!-- JS libraries -->
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- phoriajs library -->
     <script src="js/phoria/gl-matrix.js"></script>
     <script src="js/phoria/phoria-util.js"></script>
     <script src="js/phoria/phoria-entity.js"></script>
-    <script src="js/phoria/phoria-renderer.js"></script>
     <script src="js/phoria/phoria-scene.js"></script>
-    <!-- JS libraries -->
-    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/phoria/phoria-renderer.js"></script>
     <!-- Custom JS -->
+    <script type="text/javascript" src="js/tracejs-gui.js"></script>
     <script type="text/javascript" src="js/scene.js"></script>
 </head>
 <body>
@@ -33,9 +33,11 @@
             </div>
 
             <div class="col-md-2">
-                <div class="btn-group">
+                <div class="btn-group btn-group-vertical">
                     <button class="btn btn-primary">Render</button>
-                    <button class="btn btn-danger">Reset scene</button>
+                    <button class="btn btn-danger" id="reset-scene">Reset scene</button>
+                </div>
+                <div id="gui">
                 </div>
             </div>
         </div>
